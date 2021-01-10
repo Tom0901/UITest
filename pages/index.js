@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import NavBar from "../components/NavBar";
 import CustomButton from "../components/CustomButton";
 import SnoopCard from "../components/SnoopCard";
 
@@ -12,7 +13,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <CustomButton title="hello world" />
+        <NavBar />
         <SnoopCard
           icon="/FinancesIcon.svg"
           iconTitle="Finances"

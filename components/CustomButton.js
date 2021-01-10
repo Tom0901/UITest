@@ -11,7 +11,7 @@ const StyledButton = withStyles({
     "&:hover": {
       backgroundColor: "#ff5001",
     },
-    height: 48,
+    height: 40,
     padding: "0 30px",
     textTransform: "none",
   },
