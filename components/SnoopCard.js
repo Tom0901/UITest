@@ -36,10 +36,20 @@ export default function SnoopCard(props) {
         </Typography>
       </CardContent>
       <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="h2"
+          color="textPrimary"
+        >
           {title}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography
+          variant="body2"
+          color="textSecondary"
+          component="p"
+          color="textPrimary"
+        >
           {copy}
         </Typography>
       </CardContent>

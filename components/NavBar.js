@@ -24,7 +24,12 @@ export default function NavBar() {
   const classes = useStyles();
   return (
     <div className={classes.container}>
-      <Typography variant="h3" component="h2" className={classes.typography}>
+      <Typography
+        variant="h3"
+        component="h2"
+        className={classes.typography}
+        color="textPrimary"
+      >
         Snoops
       </Typography>
       <Typography
@@ -32,6 +37,7 @@ export default function NavBar() {
         variant="h6"
         component="h2"
         className={classes.typography}
+        color="textPrimary"
       >
         Here are your latest snoops. Hope they help.
       </Typography>
