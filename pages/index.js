@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import CustomButton from "../components/CustomButton";
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <link rel="icon" href="/FinancesIcon.svg" />
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <CustomButton title="hello world" />
+      </main>
 
       <footer className={styles.footer}></footer>
     </div>
