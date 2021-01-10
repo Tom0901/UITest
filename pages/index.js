@@ -1,7 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import NavBar from "../components/NavBar";
-import CustomButton from "../components/CustomButton";
 import SnoopCard from "../components/SnoopCard";
 
 export default function Home() {

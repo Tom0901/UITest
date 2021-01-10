@@ -42,9 +42,14 @@ export default function NavBar() {
         Here are your latest snoops. Hope they help.
       </Typography>
       <div className={classes.btnWrap}>
-        <CustomButton title="Latest" />
-        <CustomButton title="Pinned" />
-        <CustomButton title="Browse" />
+        <CustomButton
+          title="Latest"
+          background="#ff5001"
+          color="white"
+          hover={true}
+        />
+        <CustomButton title="Pinned" color="#ff5001" />
+        <CustomButton title="Browse" color="#ff5001" />
       </div>
     </div>
   );

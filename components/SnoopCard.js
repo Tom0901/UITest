@@ -54,7 +54,12 @@ export default function SnoopCard(props) {
         </Typography>
       </CardContent>
       <CardActions>
-        <CustomButton title={btnTitle} />
+        <CustomButton
+          title={btnTitle}
+          background={"#644dff"}
+          color="white"
+          hover={true}
+        />
         <img
           alt="pin icon"
           src="/pin.png"
