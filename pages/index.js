@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import CustomButton from "../components/CustomButton";
+import SnoopCard from "../components/SnoopCard";
 
 export default function Home() {
   return (
@@ -12,6 +13,13 @@ export default function Home() {
 
       <main className={styles.main}>
         <CustomButton title="hello world" />
+        <SnoopCard
+          icon="/FinancesIcon.svg"
+          iconTitle="Finances"
+          title="Neque porro quisquam est qui dolorem ipsum quia"
+          copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+          btnTitle="Read more"
+        />
       </main>
 
       <footer className={styles.footer}></footer>

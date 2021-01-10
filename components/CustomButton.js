@@ -13,14 +13,15 @@ const StyledButton = withStyles({
     },
     height: 48,
     padding: "0 30px",
+    textTransform: "none",
   },
 })(Button);
 
 export default function CustomButton(props) {
   const { title } = props;
   return (
-    <div>
+    <React.Fragment>
       <StyledButton>{title}</StyledButton>
-    </div>
+    </React.Fragment>
   );
 }
