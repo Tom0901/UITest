@@ -4,6 +4,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Card, CardContent, CardActions, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles({
+  container: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+  },
   category: {
     display: "flex",
     alignItems: "center",
@@ -18,13 +23,20 @@ const useStyles = makeStyles({
     color: "#4cae51",
     paddingLeft: ".5rem",
   },
+
+  title: {
+    marginBottom: "2rem",
+  },
+  copy: {
+    marginBottom: "3rem",
+  },
 });
 
 export default function SnoopCard(props) {
   const { icon, iconTitle, title, titleIco, copy, btnTitle } = props;
   const classes = useStyles();
   return (
-    <Card>
+    <Card className={classes.container}>
       <CardContent className={classes.category}>
         <img alt="icon" src={icon} className={classes.icon} />
         <Typography
@@ -37,10 +49,10 @@ export default function SnoopCard(props) {
       </CardContent>
       <CardContent>
         <Typography
-          gutterBottom
           variant="h5"
           component="h2"
           color="textPrimary"
+          className={classes.title}
         >
           {title}
         </Typography>
@@ -49,6 +61,7 @@ export default function SnoopCard(props) {
           color="textSecondary"
           component="p"
           color="textPrimary"
+          className={classes.copy}
         >
           {copy}
         </Typography>

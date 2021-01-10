@@ -1,14 +1,5 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .main {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -16,24 +7,19 @@
   align-items: center;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
+.flex1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 1rem;
 }
 
-.footer img {
-  margin-left: 0.5rem;
+.flex1 > * {
+  max-width: 25vw;
 }
 
-.footer a {
+.flex2 {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-@media (max-width: 600px) {
+.flex2 > * {
+  max-width: 25vw;
 }

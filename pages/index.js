@@ -13,16 +13,55 @@ export default function Home() {
 
       <main className={styles.main}>
         <NavBar />
-        <SnoopCard
-          icon="/FinancesIcon.svg"
-          iconTitle="Finances"
-          title="Neque porro quisquam est qui dolorem ipsum quia"
-          copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
-          btnTitle="Read more"
-        />
+        <div className={styles.flex1}>
+          <SnoopCard
+            icon="/FinancesIcon.svg"
+            iconTitle="Finances"
+            title="Neque porro quisquam est qui dolorem ipsum quia"
+            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+            btnTitle="Read more"
+          />
+          <img src="/hero-umbrella.jpg"></img>
+          <SnoopCard
+            icon="/FinancesIcon.svg"
+            iconTitle="Finances"
+            title="Neque porro quisquam est qui dolorem ipsum quia"
+            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+            btnTitle="Read more"
+          />
+          <SnoopCard
+            icon="/FinancesIcon.svg"
+            iconTitle="Finances"
+            title="Neque porro quisquam est qui dolorem ipsum quia"
+            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+            btnTitle="Read more"
+          />
+        </div>
+        <div className={styles.flex2}>
+          <SnoopCard
+            icon="/FinancesIcon.svg"
+            iconTitle="Finances"
+            title="Neque porro quisquam est qui dolorem ipsum quia"
+            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+            btnTitle="Read more"
+          />
+          <SnoopCard
+            icon="/FinancesIcon.svg"
+            iconTitle="Finances"
+            title="Neque porro quisquam est qui dolorem ipsum quia"
+            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+            btnTitle="Read more"
+          />
+          <img src="/hero-rain.jpg"></img>
+          <SnoopCard
+            icon="/FinancesIcon.svg"
+            iconTitle="Finances"
+            title="Neque porro quisquam est qui dolorem ipsum quia"
+            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+            btnTitle="Read more"
+          />
+        </div>
       </main>
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }

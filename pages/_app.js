@@ -9,7 +9,7 @@ const THEME = createMuiTheme({
   },
   typography: {
     fontFamily: "Roboto, sans-serif",
-    fontSize: 14,
+    fontSize: 16,
     h3: {
       fontWeight: 650,
     },
@@ -21,6 +21,8 @@ const THEME = createMuiTheme({
     },
     body2: {
       fontWeight: "regular",
+      lineHeight: "1.5rem",
+      letterSpacing: ".02rem",
     },
   },
 });
