@@ -35,7 +35,7 @@ export default function NavBar() {
       >
         Here are your latest snoops. Hope they help.
       </Typography>
-      <div className="classes.btnWrap">
+      <div className={classes.btnWrap}>
         <CustomButton title="Latest" />
         <CustomButton title="Pinned" />
         <CustomButton title="Browse" />

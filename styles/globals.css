@@ -2,8 +2,31 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: "#231a4f";
+}
+
+@font-face {
+  font-family: "LabGrotesqueO-Black";
+  src: url("https://d1tgie0box83ar.cloudfront.net/assets/LabGrotesqueO-Black.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "LabGrotesqueO-Bold";
+  src: url("https://d1tgie0box83ar.cloudfront.net/assets/LabGrotesqueO-Bold.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "LabGrotesqueO-Medium";
+  src: url("https://d1tgie0box83ar.cloudfront.net/assets/LabGrotesqueO-Medium.woff")
+    format("woff");
+}
+
+@font-face {
+  font-family: "LabGrotesqueO-Regular";
+  src: url("https://d1tgie0box83ar.cloudfront.net/assets/LabGrotesqueO-Regular.woff")
+    format("woff");
 }
 
 a {
