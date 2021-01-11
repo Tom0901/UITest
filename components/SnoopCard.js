@@ -34,10 +34,21 @@ export default function SnoopCard(props) {
     copy: {
       marginBottom: "3rem",
     },
+    newWrap: {
+      display: "flex",
+      alignItems: "flex-start",
+    },
     new: {
       width: "3rem",
       height: "3rem",
-      backgroundColor: "#ceccd8",
+      backgroundColor: "#736d8d",
+      borderRadius: "10px",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      color: "white",
+      fontWeight: 600,
+      boxShadow: "inset 0 0 10px #000000",
     },
   });
   const classes = useStyles();
@@ -54,24 +65,50 @@ export default function SnoopCard(props) {
         </Typography>
       </CardContent>
       <CardContent>
-        {titleIco ? <div className={classes.new}>New</div> : null}
-        <Typography
-          variant="h5"
-          component="h2"
-          color="textPrimary"
-          className={classes.title}
-        >
-          {title}
-        </Typography>
-        <Typography
-          variant="body2"
-          color="textSecondary"
-          component="p"
-          color="textPrimary"
-          className={classes.copy}
-        >
-          {copy}
-        </Typography>
+        {titleIco ? (
+          <React.Fragment>
+            <div className={classes.newWrap}>
+              <div className={classes.new}>NEW</div>{" "}
+              <Typography
+                variant="h5"
+                component="h2"
+                color="textPrimary"
+                className={classes.title}
+              >
+                {title}
+              </Typography>
+            </div>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              color="textPrimary"
+              className={classes.copy}
+            >
+              {copy}
+            </Typography>
+          </React.Fragment>
+        ) : (
+          <React.Fragment>
+            <Typography
+              variant="h5"
+              component="h2"
+              color="textPrimary"
+              className={classes.title}
+            >
+              {title}
+            </Typography>
+            <Typography
+              variant="body2"
+              color="textSecondary"
+              component="p"
+              color="textPrimary"
+              className={classes.copy}
+            >
+              {copy}
+            </Typography>
+          </React.Fragment>
+        )}
       </CardContent>
       <CardActions>
         <CustomButton
