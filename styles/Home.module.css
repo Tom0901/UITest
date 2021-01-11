@@ -55,6 +55,6 @@
   }
 
   .lastChild {
-    position: fixed;
+    position: inherit !important;
   }
 }
