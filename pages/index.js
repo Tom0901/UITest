@@ -24,7 +24,7 @@ export default function Home() {
           />
           <img src="/hero-umbrella.jpg"></img>
           <SnoopCard
-            icon="/shopping.png"
+            icon="/shopping.jpg"
             iconTitle="Shopping"
             iconColor="#00bcd4"
             title="Neque porro quisquam est qui dolorem ipsum quia"
