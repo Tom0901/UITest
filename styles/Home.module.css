@@ -13,13 +13,30 @@
 }
 
 .flex1 > * {
-  max-width: 25vw;
+  max-width: 25%;
 }
 
 .flex2 {
   display: flex;
+  align-items: center;
 }
 
 .flex2 > * {
-  max-width: 25vw;
+  max-width: 25%;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.flex2 > img {
+  max-width: 50%;
+}
+
+.lastChild {
+  position: absolute;
+  max-width: 25%;
+  right: 0;
+}
+
+.lastChild > * {
+  border-radius: 30px !important;
 }

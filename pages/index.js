@@ -52,14 +52,16 @@ export default function Home() {
             copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
             btnTitle="Read more"
           />
-          <img src="/hero-rain.jpg"></img>
-          <SnoopCard
-            icon="/FinancesIcon.svg"
-            iconTitle="Finances"
-            title="Neque porro quisquam est qui dolorem ipsum quia"
-            copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
-            btnTitle="Read more"
-          />
+          <img src="/hero-rain.jpg" className={styles.background} />
+          <div className={styles.lastChild}>
+            <SnoopCard
+              icon="/FinancesIcon.svg"
+              iconTitle="Finances"
+              title="Neque porro quisquam est qui dolorem ipsum quia"
+              copy="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in"
+              btnTitle="Read more"
+            />
+          </div>
         </div>
       </main>
     </div>
