@@ -15,9 +15,11 @@ const useStyles = makeStyles({
   },
   icon: {
     width: "1.75rem",
+    cursor: "pointer",
   },
   iconLarge: {
     width: "2.25rem",
+    cursor: "pointer",
   },
   iconTitle: {
     color: "#4cae51",
