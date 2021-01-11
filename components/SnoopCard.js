@@ -3,39 +3,43 @@ import CustomButton from "../components/CustomButton";
 import { makeStyles } from "@material-ui/core/styles";
 import { Card, CardContent, CardActions, Typography } from "@material-ui/core";
 
-const useStyles = makeStyles({
-  container: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-  },
-  category: {
-    display: "flex",
-    alignItems: "center",
-  },
-  icon: {
-    width: "1.75rem",
-    cursor: "pointer",
-  },
-  iconLarge: {
-    width: "2.25rem",
-    cursor: "pointer",
-  },
-  iconTitle: {
-    color: "#4cae51",
-    paddingLeft: ".5rem",
-  },
-
-  title: {
-    marginBottom: "2rem",
-  },
-  copy: {
-    marginBottom: "3rem",
-  },
-});
-
 export default function SnoopCard(props) {
-  const { icon, iconTitle, title, titleIco, copy, btnTitle } = props;
+  const { icon, iconTitle, title, titleIco, copy, btnTitle, iconColor } = props;
+  const useStyles = makeStyles({
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "space-between",
+    },
+    category: {
+      display: "flex",
+      alignItems: "center",
+    },
+    icon: {
+      width: "1.75rem",
+      cursor: "pointer",
+    },
+    iconLarge: {
+      width: "2.25rem",
+      cursor: "pointer",
+    },
+    iconTitle: {
+      color: `${iconColor}`,
+      paddingLeft: ".5rem",
+    },
+
+    title: {
+      marginBottom: "2rem",
+    },
+    copy: {
+      marginBottom: "3rem",
+    },
+    new: {
+      width: "3rem",
+      height: "3rem",
+      backgroundColor: "#ceccd8",
+    },
+  });
   const classes = useStyles();
   return (
     <Card className={classes.container}>
@@ -50,6 +54,7 @@ export default function SnoopCard(props) {
         </Typography>
       </CardContent>
       <CardContent>
+        {titleIco ? <div className={classes.new}>New</div> : null}
         <Typography
           variant="h5"
           component="h2"
