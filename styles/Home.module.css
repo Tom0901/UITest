@@ -58,3 +58,10 @@
     position: inherit !important;
   }
 }
+
+@media (max-width: 600px) {
+  .flex2 > *,
+  .flex1 > * {
+    max-width: 95%;
+  }
+}
