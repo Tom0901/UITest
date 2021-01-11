@@ -19,11 +19,11 @@
 .flex2 {
   display: flex;
   align-items: center;
+  margin-top: 1rem;
 }
 
 .flex2 > * {
   max-width: 25%;
-  margin: 2rem 0;
   position: relative;
 }
 
@@ -39,4 +39,22 @@
 
 .lastChild > * {
   border-radius: 30px !important;
+}
+
+@media (max-width: 1100px) {
+  .flex1,
+  .flex2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex2 > *,
+  .flex1 > * {
+    max-width: 75%;
+    margin-top: 1rem;
+  }
+
+  .lastChild {
+    position: fixed;
+  }
 }
