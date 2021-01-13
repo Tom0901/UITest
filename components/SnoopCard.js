@@ -2,6 +2,7 @@ import React from "react";
 import CustomButton from "../components/CustomButton";
 import { makeStyles } from "@material-ui/core/styles";
 import { Card, CardContent, CardActions, Typography } from "@material-ui/core";
+import Link from "next/link";
 
 export default function SnoopCard(props) {
   const { icon, iconTitle, title, titleIco, copy, btnTitle, iconColor } = props;
@@ -65,58 +66,37 @@ export default function SnoopCard(props) {
         </Typography>
       </CardContent>
       <CardContent>
-        {titleIco ? (
-          <React.Fragment>
-            <div className={classes.newWrap}>
-              <div className={classes.new}>NEW</div>{" "}
-              <Typography
-                variant="h5"
-                component="h2"
-                color="textPrimary"
-                className={classes.title}
-              >
-                {title}
-              </Typography>
-            </div>
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              component="p"
-              color="textPrimary"
-              className={classes.copy}
-            >
-              {copy}
-            </Typography>
-          </React.Fragment>
-        ) : (
-          <React.Fragment>
-            <Typography
-              variant="h5"
-              component="h2"
-              color="textPrimary"
-              className={classes.title}
-            >
-              {title}
-            </Typography>
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              component="p"
-              color="textPrimary"
-              className={classes.copy}
-            >
-              {copy}
-            </Typography>
-          </React.Fragment>
-        )}
+        <React.Fragment>
+          <Typography
+            variant="h5"
+            component="h2"
+            color="textPrimary"
+            className={classes.title}
+          >
+            {title}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="textSecondary"
+            component="p"
+            color="textPrimary"
+            className={classes.copy}
+          >
+            {copy}
+          </Typography>
+        </React.Fragment>
       </CardContent>
       <CardActions>
-        <CustomButton
-          title={btnTitle}
-          background={"#644dff"}
-          color="white"
-          hover={true}
-        />
+        <Link href={`/subjects/${iconTitle}`}>
+          <a>
+            <CustomButton
+              title={btnTitle}
+              background={"#644dff"}
+              color="white"
+              hover={true}
+            />
+          </a>
+        </Link>
         <img
           alt="pin icon"
           src="/pin.png"

@@ -20,7 +20,8 @@ const useStyles = makeStyles({
   },
 });
 
-export default function NavBar() {
+export default function NavBar(props) {
+  const { background, color } = props;
   const classes = useStyles();
   return (
     <div className={classes.container}>
