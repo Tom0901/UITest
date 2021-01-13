@@ -1,5 +1,6 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import Layout from "../components/Layout";
 import NavBar from "../components/NavBar";
 import SnoopCard from "../components/SnoopCard";
 
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/FinancesIcon.svg" />
       </Head>
 
-      <main className={styles.main}>
+      <Layout className={styles.main}>
         <NavBar />
         <div className={styles.flex1}>
           <SnoopCard
@@ -70,7 +71,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </main>
+      </Layout>
     </div>
   );
 }
