@@ -13,7 +13,9 @@ export default function PostBuilder(props) {
       {items.map((item) => (
         <div className={styles.item}>
           {item.type === "text" ? (
-            <PostItem text={item.payload} />
+            <PostItem text={item.payload} size="body2" />
+          ) : item.type === "title" ? (
+            <PostItem text={item.payload} size="h5" />
           ) : (
             <React.Fragment>
               <img src={item.payload}></img>
