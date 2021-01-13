@@ -1,7 +1,9 @@
 import React from "react";
-import PostItem from "./PostItem";
 import { Typography } from "@material-ui/core";
 import styles from "../styles/postBuilder.module.css";
+import CustomButton from "./CustomButton";
+import PostItem from "./PostItem";
+import Link from "next/link";
 
 export default function PostBuilder(props) {
   const { items, title } = props;
@@ -18,11 +20,21 @@ export default function PostBuilder(props) {
             <PostItem text={item.payload} size="h5" />
           ) : (
             <React.Fragment>
-              <img src={item.payload}></img>
+              <img src={item.payload} className={styles.img}></img>
             </React.Fragment>
           )}
         </div>
       ))}
+      <Link href="/">
+        <a>
+          <CustomButton
+            title="Go Home"
+            background={"#644dff"}
+            color="white"
+            hover={true}
+          />
+        </a>
+      </Link>
     </section>
   );
 }
