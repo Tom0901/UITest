@@ -1,5 +1,7 @@
 .wrap {
   background-color: red;
+  width: 25%;
+  display: inline-block;
 }
 
 .img {

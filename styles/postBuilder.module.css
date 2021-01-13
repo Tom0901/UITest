@@ -5,10 +5,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  max-width: 75%;
 }
 
 .item {
-  max-width: 75%;
   padding: 1rem 0;
 }
 
