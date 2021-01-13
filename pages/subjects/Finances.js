@@ -1,9 +1,10 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 export default function Finances() {
   return (
-    <div>
+    <Layout>
       <h1>Finances</h1>
-    </div>
+    </Layout>
   );
 }

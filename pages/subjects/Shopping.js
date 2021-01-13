@@ -1,9 +1,10 @@
 import React from "react";
+import Layout from "../../components/Layout";
 
 export default function Shopping() {
   return (
-    <div>
+    <Layout>
       <h1>Shopping</h1>
-    </div>
+    </Layout>
   );
 }
