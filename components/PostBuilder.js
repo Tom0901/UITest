@@ -1,16 +1,17 @@
 import React from "react";
 import PostItem from "./PostItem";
 import { Typography } from "@material-ui/core";
+import styles from "../styles/postBuilder.module.css";
 
 export default function PostBuilder(props) {
   const { items, title } = props;
   return (
-    <section>
+    <section className={styles.layout}>
       <Typography variant="h3" component="h2" color="textPrimary">
         {title}
       </Typography>
       {items.map((item) => (
-        <React.Fragment>
+        <div className={styles.item}>
           {item.type === "text" ? (
             <PostItem text={item.payload} />
           ) : (
@@ -18,7 +19,7 @@ export default function PostBuilder(props) {
               <img src={item.payload}></img>
             </React.Fragment>
           )}
-        </React.Fragment>
+        </div>
       ))}
     </section>
   );
