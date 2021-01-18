@@ -7,11 +7,6 @@ import Link from "next/link";
 export default function SnoopCard(props) {
   const { icon, iconTitle, title, titleIco, copy, btnTitle, iconColor } = props;
   const useStyles = makeStyles({
-    container: {
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "space-between",
-    },
     category: {
       display: "flex",
       alignItems: "center",
