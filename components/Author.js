@@ -7,8 +7,12 @@ export default function Author(props) {
   return (
     <section className={styles.wrap}>
       <img src={`/${img}`} className={styles.img}></img>
-      <Typography variant="body2">{date}</Typography>
-      <Typography variant="body2">{bio}</Typography>
+      <Typography variant="body2" component="p">
+        {bio}
+      </Typography>
+      <Typography variant="body2" component="p">
+        {date}
+      </Typography>
     </section>
   );
 }

@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function PostBuilder(props) {
   const { items, title } = props;
   return (
-    <React.Fragment>
+    <div className={styles.wrapper}>
       <section className={styles.layout}>
         <Typography variant="h3" component="h2" color="textPrimary">
           {title}
@@ -38,11 +38,7 @@ export default function PostBuilder(props) {
           </a>
         </Link>
       </section>
-      <Author
-        img="finances.jpg"
-        date="18/09/2020"
-        bio="My name is Nancy and I write articles"
-      />
-    </React.Fragment>
+      <Author img="profile.jpg" date="18/09/2020" bio="Tom Jackson" />
+    </div>
   );
 }

@@ -4,7 +4,7 @@ import React from "react";
 export default function PostItem(props) {
   const { text, size } = props;
   return (
-    <Typography variant={size} component="h2">
+    <Typography variant={size} component="p">
       {text}
     </Typography>
   );
