@@ -31,7 +31,7 @@ export default function NavBar(props) {
         className={classes.typography}
         color="textPrimary"
       >
-        Snoops
+        Scoops
       </Typography>
       <Typography
         gutterBottom
@@ -40,7 +40,7 @@ export default function NavBar(props) {
         className={classes.typography}
         color="textPrimary"
       >
-        Here are your latest snoops. Hope they help.
+        Here are your latest scoops. Hope they help.
       </Typography>
       <div className={classes.btnWrap}>
         <CustomButton
