@@ -4,7 +4,7 @@ import PostBuilder from "../../components/PostBuilder";
 export default function Shopping() {
   return (
     <PostBuilder
-      title="Finances"
+      title="Shopping"
       items={[
         {
           payload:

@@ -49,8 +49,6 @@ export default function NavBar(props) {
           color="white"
           hover={true}
         />
-        <CustomButton title="Pinned" color="#ff5001" />
-        <CustomButton title="Browse" color="#ff5001" />
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import PostBuilder from "../../components/PostBuilder";
 export default function MoneyInsight() {
   return (
     <PostBuilder
-      title="Finances"
+      title="Money Insights"
       items={[
         {
           payload:
